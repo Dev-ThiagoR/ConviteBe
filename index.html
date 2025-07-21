@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html class="scroll-smooth" lang="pt-BR">
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1" name="viewport"/>
+  <title>
+   2 Anos do Bê
+  </title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&amp;family=Comic+Neue:wght@700&amp;display=swap" rel="stylesheet"/>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+  <style>
+   body {
+      font-family: 'Comic Neue', cursive;
+      background-color: #fef3c7; /* fallback warm yellow */
+    }
+    h1, h2, h3 {
+      font-family: 'Fredoka One', cursive;
+    }
+    /* Smooth button hover scale */
+    .btn-animate:hover {
+      transform: scale(1.05);
+      transition: transform 0.3s ease-in-out;
+    }
+    /* Focus outline for accessibility */
+    a:focus, button:focus {
+      outline: 3px solid #facc15; /* bright yellow */
+      outline-offset: 2px;
+    }
+  </style>
+ </head>
+ <body class="min-h-screen flex flex-col bg-yellow-50 text-gray-900 selection:bg-red-500 selection:text-white">
+  <!-- Background image top -->
+  <div class="relative w-full h-48 sm:h-64 md:h-80 lg:h-96 overflow-hidden">
+   <img alt="Imagem de estrada deserta ao pôr do sol com montanhas ao fundo, remetendo ao cenário de Radiator Springs, com cores quentes e vibrantes" class="w-full h-full object-cover object-center" decoding="async" height="384" loading="lazy" src="https://storage.googleapis.com/a1aa/image/13c3e6b7-6f28-460d-e45c-2566a32a2ca5.jpg" width="1920"/>
+   <nav aria-label="Menu principal" class="absolute top-4 left-1/2 transform -translate-x-1/2 flex space-x-6 bg-red-600 bg-opacity-90 rounded-full px-6 py-2 shadow-lg z-10">
+    <a class="flex items-center space-x-2 text-yellow-300 hover:text-yellow-400 focus:text-yellow-400 focus:outline-none" href="#inicio" tabindex="0">
+     <i aria-hidden="true" class="fas fa-flag-checkered fa-lg"></i>
+     <span class="sr-only">Início</span>
+     <span class="hidden sm:inline font-semibold text-lg">Início</span>
+    </a>
+    <a class="flex items-center space-x-2 text-yellow-300 hover:text-yellow-400 focus:text-yellow-400 focus:outline-none" href="#personagens" tabindex="0">
+     <i aria-hidden="true" class="fas fa-car fa-lg"></i>
+     <span class="sr-only">Personagens</span>
+     <span class="hidden sm:inline font-semibold text-lg">Personagens</span>
+    </a>
+    <a class="flex items-center space-x-2 text-yellow-300 hover:text-yellow-400 focus:text-yellow-400 focus:outline-none" href="#eventos" tabindex="0">
+     <i aria-hidden="true" class="fas fa-calendar-alt fa-lg"></i>
+     <span class="sr-only">Eventos</span>
+     <span class="hidden sm:inline font-semibold text-lg">Eventos</span>
+    </a>
+    <a class="flex items-center space-x-2 text-yellow-300 hover:text-yellow-400 focus:text-yellow-400 focus:outline-none" href="#galeria" tabindex="0">
+     <i aria-hidden="true" class="fas fa-images fa-lg"></i>
+     <span class="sr-only">Galeria</span>
+     <span class="hidden sm:inline font-semibold text-lg">Galeria</span>
+    </a>
+    <a class="flex items-center space-x-2 text-yellow-300 hover:text-yellow-400 focus:text-yellow-400 focus:outline-none" href="#contato" tabindex="0">
+     <i aria-hidden="true" class="fas fa-envelope fa-lg"></i>
+     <span class="sr-only">Contato</span>
+     <span class="hidden sm:inline font-semibold text-lg">Contato</span>
+    </a>
+   </nav>
+  </div>
+  <main class="flex-grow max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
+   <!-- Hero Section -->
+   <section class="text-center mb-16" id="inicio">
+    <h1 class="text-4xl sm:text-5xl md:text-6xl font-bold text-red-600 drop-shadow-lg mb-4">
+     Liguem os motores e venha comemorar comigo!
+    </h1>
+    <p class="text-yellow-700 text-lg sm:text-xl md:text-2xl max-w-3xl mx-auto font-semibold mb-8">
+     Uma festa cheia de velocidade, diversão e muita aventura no estilo Radiator Springs!
+    </p>
+    <button aria-label="Saiba mais sobre a festa" class="btn-animate inline-block bg-red-600 hover:bg-red-700 focus:bg-red-700 text-yellow-300 font-bold py-3 px-8 rounded-full shadow-lg transition-transform duration-300 ease-in-out" tabindex="0">
+     Saiba Mais
+    </button>
+   </section>
+
+   <!-- Personagens Section com só 1 personagem -->
+   <section class="mb-20" id="personagens">
+    <h2 class="text-3xl sm:text-4xl font-bold text-blue-700 mb-8 text-center drop-shadow-md">
+     Conheça o Personagem
+    </h2>
+    <article class="bg-yellow-100 rounded-xl shadow-md p-6 flex flex-col items-center text-center max-w-md mx-auto">
+     <img alt="Relâmpago McQueen vermelho vibrante em posição de corrida, com expressão determinada e fundo vermelho brilhante" class="rounded-lg mb-4 w-full h-48 object-cover object-center" decoding="async" height="200" loading="lazy" src="./img/be.jpg" width="300"/>
+     <h3 class="text-xl font-semibold text-red-600 mb-2">
+      Bernardo Nunes
+     </h3>
+     <p class="text-gray-700 font-medium">
+      O menino mais agitado de Radiator Springs! <br>Com sua pontência exorbitante, ele consegue chegar de 0 à 100 em 0.3s. 
+
+
+     </p>
+    </article>
+   </section>
+
+   <!-- Eventos Section com só 1 evento -->
+   <section class="mb-20" id="eventos">
+    <h2 class="text-3xl sm:text-4xl font-bold text-red-600 mb-8 text-center drop-shadow-md">
+     Próximo Evento
+    </h2>
+    <article class="bg-yellow-100 rounded-xl shadow-md p-6 flex flex-col sm:flex-row items-center sm:items-start max-w-4xl mx-auto space-y-4 sm:space-y-0 sm:space-x-6">
+     <img alt="Relâmpago McQueen em uma corrida de velocidade em pista de asfalto com arquibancadas ao fundo" class="rounded-lg w-full sm:w-48 h-36 object-cover object-center flex-shrink-0" decoding="async" height="140" loading="lazy" src="./img/be2.jpg" width="200"/>
+     <div>
+      <h3 class="text-2xl font-semibold text-red-700 mb-2">
+       Corrida Para o Aniversário
+      </h3>
+      <p class="text-gray-800 font-medium mb-1">
+       Data: 02 de Agosto de 2025
+      </p>
+      <p class="text-gray-700">
+       Venha torcer pelo Bernardo na corrida mais emocionante do ano em Radiator Springs! Traga seu foguete porque a vitória é na certa.
+      </p>
+     </div>
+    </article>
+   </section>
+
+   <!-- Galeria Section -->
+   <section class="mb-20" id="galeria">
+    <h2 class="text-3xl sm:text-4xl font-bold text-blue-700 mb-8 text-center drop-shadow-md">
+     Galeria de Imagens
+    </h2>
+    <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 gap-4 max-w-7xl mx-auto">
+     <img alt="Relâmpago McQueen cruzando a linha de chegada com fumaça saindo dos pneus e montanhas ao fundo" class="rounded-lg shadow-md w-full h-48 object-cover object-center" decoding="async" height="300" loading="lazy" src="./img/be4.jpg" tabindex="0" width="400"/>
+     <img alt="Mate e Relâmpago McQueen em uma aventura no deserto com cactos e céu azul claro" class="rounded-lg shadow-md w-full h-48 object-cover object-center" decoding="async" height="300" loading="lazy" src="/img/be5.jpg" tabindex="0" width="400"/>
+     <img alt="Sally dirigindo pela estrada florida com montanhas ao fundo em dia ensolarado" class="rounded-lg shadow-md w-full h-48 object-cover object-center" decoding="async" height="300" loading="lazy" src="/img/be6.jpg" tabindex="0" width="400"/>
+     <img alt="Vista panorâmica da cidade de Radiator Springs com carros coloridos e prédios vibrantes" class="rounded-lg shadow-md w-full h-48 object-cover object-center" decoding="async" height="300" loading="lazy" src="/img/be7.jpg" tabindex="0" width="400"/>
+     <img alt="Relâmpago McQueen e Mate posando para foto sorrindo com estrada ao fundo" class="rounded-lg shadow-md w-full h-48 object-cover object-center" decoding="async" height="300" loading="lazy" src="/img/be3.jpg" tabindex="0" width="400"/>
+    </div>
+   </section>
+
+   <!-- Call to Action Section com botão que abre modal -->
+   <section class="bg-red-600 rounded-xl p-8 text-center text-yellow-300 shadow-lg max-w-4xl mx-auto mb-20">
+    <h2 class="text-3xl sm:text-4xl font-bold mb-4 drop-shadow-lg">
+     Pronto para acelerar a diversão?
+    </h2>
+    <p class="text-lg sm:text-xl mb-6 font-semibold">
+     Junte-se a nós e faça parte dessa aventura inesquecível!
+    </p>
+    <button
+      id="openFormBtn"
+      aria-label="Participe da festa"
+      class="btn-animate bg-yellow-400 hover:bg-yellow-300 focus:bg-yellow-300 text-red-700 font-bold py-3 px-10 rounded-full shadow-lg transition-transform duration-300 ease-in-out"
+      tabindex="0"
+    >
+     Participe
+    </button>
+   </section>
+  </main>
+
+  <!-- Footer with Social Media -->
+  <footer class="bg-yellow-100 border-t border-yellow-300 py-8 text-center" id="contato">
+   
+    © 2024 Festa de Bernardo Nunes. Todos os direitos reservados.
+   </p>
+  </footer>
+
+  <!-- Modal do Formulário (hidden por padrão) -->
+  <div
+    id="modalForm"
+    class="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center p-4 hidden"
+    role="dialog"
+    aria-modal="true"
+    aria-labelledby="formTitle"
+  >
+    <div class="bg-yellow-50 rounded-xl max-w-md w-full p-6 relative shadow-lg">
+      <button
+        id="closeModalBtn"
+        class="absolute top-3 right-3 text-red-600 hover:text-red-800 focus:outline-none"
+        aria-label="Fechar formulário"
+      >
+        <i class="fas fa-times fa-lg"></i>
+      </button>
+      <h3 id="formTitle" class="text-2xl font-bold text-red-600 mb-4 text-center">
+        Confirme sua presença
+      </h3>
+      <form id="rsvpForm" class="space-y-4" novalidate>
+        <div>
+          <label for="nome" class="block font-semibold text-gray-800 mb-1">
+            Nome completo <span class="text-red-600">*</span>
+          </label>
+          <input
+            type="text"
+            id="nome"
+            name="nome"
+            required
+            class="w-full rounded-md border border-gray-300 p-2 focus:ring-2 focus:ring-red-600 focus:outline-none"
+            placeholder="Seu nome aqui"
+            autocomplete="name"
+          />
+        </div>
+        <div>
+          <label for="acompanhantes" class="block font-semibold text-gray-800 mb-1">
+            Quantidade de acompanhantes
+          </label>
+          <input
+            type="number"
+            id="acompanhantes"
+            name="acompanhantes"
+            min="0"
+            max="10"
+            class="w-full rounded-md border border-gray-300 p-2 focus:ring-2 focus:ring-red-600 focus:outline-none"
+            placeholder="0"
+            value="0"
+          />
+        </div>
+        <div>
+          <label for="presente" class="block font-semibold text-gray-800 mb-1">
+            Presente
+          </label>
+          <select
+            id="presente"
+            name="presente"
+            class="w-full rounded-md border border-gray-300 p-2 focus:ring-2 focus:ring-red-600 focus:outline-none"
+          >
+            <option value="carro">Carro</option>
+            <option value="roupa">Roupa</option>
+            <option value="outros">Outros</option>
+          </select>
+        </div>
+        <div class="flex items-center space-x-2">
+          <input
+            type="checkbox"
+            id="confirmacao"
+            name="confirmacao"
+            required
+            class="focus:ring-red-600"
+          />
+          <label for="confirmacao" class="font-semibold text-gray-800">
+            Confirmo minha presença
+            <span class="text-red-600">*</span>
+          </label>
+        </div>
+        <button
+          type="submit"
+          class="w-full bg-red-600 hover:bg-red-700 focus:bg-red-700 text-yellow-300 font-bold py-3 rounded-full shadow-lg transition-colors"
+        >
+          Enviar
+        </button>
+      </form>
+      <p
+        id="thankYouMsg"
+        class="hidden mt-4 text-center font-semibold text-green-700"
+      >
+        Obrigado por confirmar! Estamos ansiosos para acelerar juntos!
+      </p>
+    </div>
+  </div>
+   <script>
+  const openBtn = document.getElementById('openFormBtn');
+  const modal = document.getElementById('modalForm');
+  const closeBtn = document.getElementById('closeModalBtn');
+  const form = document.getElementById('rsvpForm');
+  const thankYouMsg = document.getElementById('thankYouMsg');
+
+  openBtn.addEventListener('click', () => {
+    modal.classList.remove('hidden');
+    form.classList.remove('hidden');
+    thankYouMsg.classList.add('hidden');
+    form.reset();
+    document.getElementById('nome').focus();
+  });
+
+  closeBtn.addEventListener('click', () => {
+    modal.classList.add('hidden');
+  });
+
+  modal.addEventListener('click', (e) => {
+    if (e.target === modal) {
+      modal.classList.add('hidden');
+    }
+  });
+
+  form.addEventListener('submit', (e) => {
+    e.preventDefault();
+    if (!form.checkValidity()) {
+      form.reportValidity();
+      return;
+    }
+
+    // Aqui você pode enviar os dados para backend, se quiser
+    // Como não tem backend, só mostra a mensagem de agradecimento
+
+    form.classList.add('hidden');
+    thankYouMsg.classList.remove('hidden');
+  });
+
+  // Copiar nome para área de transferência ao dar duplo clique no input
+  document.getElementById('nome').addEventListener('dblclick', function () {
+    const nome = this.value.trim();
+    if (nome) {
+      navigator.clipboard.writeText(nome).then(() => {
+        alert('Nome copiado para a área de transferência!');
+      }).catch(err => {
+        console.error('Erro ao copiar:', err);
+      });
+    }
+  });
+</script>
